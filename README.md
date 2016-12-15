@@ -5,5 +5,3 @@ Creating a new branch is hahaha.
 Creating a new branch is wahaha.
 Master modify
 Huhuhu modify
-<<<<<<< HEAD
->>>>>>> huhuhu
