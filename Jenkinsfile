@@ -3,7 +3,11 @@ pipeline {
   stages {
     stage('mkdir /tmp/111') {
       steps {
-        sh 'mkdir -p /tmp/111'
+        sh '''if [ -e /tmp/111 ]; then
+    echo exists
+else
+    echo not exists
+fi'''
       }
     }
     stage('mkdir /tmp/222') {
