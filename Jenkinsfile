@@ -11,5 +11,11 @@ pipeline {
         sh 'mkdir /tmp/222'
       }
     }
+    stage('Build a wanglei-test') {
+      steps {
+        build(job: 'wanglei-test', propagate: true, quietPeriod: 10, wait: true)
+        sh 'echo 66666'
+      }
+    }
   }
 }
